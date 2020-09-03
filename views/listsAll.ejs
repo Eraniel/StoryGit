@@ -1,0 +1,9 @@
+<%- include("partials/header") -%>
+
+<%  newListItems.forEach(function(listItem){ %>
+    <div class="item">
+      <a href=" <%= listItem.link %> " id="link" > <%=  listItem.name %></a>
+    </div>
+<%})%>
+
+<%- include("partials/footer") -%>
